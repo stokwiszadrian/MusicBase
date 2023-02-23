@@ -1,0 +1,323 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y:auto;
+  overflow-x: hidden;
+  background-color: rgb(255, 225, 189);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.App {
+  text-align: justify;
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 225, 189)
+}
+
+nav {
+  color: white;
+  background-color: rgb(24, 11, 0);
+  display: flex;
+  width: 100%;
+  height: 12%;
+  border: 1px solid black;
+  align-items: center;
+}
+
+nav span {
+  width:fit-content;
+  text-align: center;
+  margin: 0px 30px 0px 30px;
+  padding: 0;
+  font-size: 4ex;
+  font-weight: 600;
+}
+
+nav img {
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  width: 22%;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+nav ul li a {
+  background-color: rgb(24, 11, 0);
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  font-style: oblique;
+  font-size: 2.8ex;
+}
+
+nav ul li a:hover {
+  background-color: rgb(70, 38, 11);
+}
+
+.main {
+  display: flex;
+  width: 100%
+}
+
+.recent {
+  width: 20%;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.Recent {
+  display: flex;
+  flex-direction: column;
+}
+
+.Recent span {
+  margin-top: 2ex;
+  font-weight: 500;
+  font-size: 3ex;
+  align-self: center;
+}
+
+.outlet {
+  width: 80%;
+  height: 100%;
+  padding: 1ex;
+}
+
+.Recent ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Recent ol li {
+  border-top: 1px solid black;
+}
+
+.Recent button {
+  padding: 1ex;
+  background-color: rgb(255, 225, 189);
+  border: none;
+  transition: 0.2s;
+  width: 100%;
+  font-size: 2ex;
+}
+
+.Recent button:hover {
+  background-color: rgb(212, 189, 159);
+  cursor: pointer;
+}
+
+.Albumlist {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Albumlist span {
+  padding-top: 2ex;
+  font-weight: 500;
+  font-size: 3.5ex;
+  align-self: center;
+}
+
+.Albumlist ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  column-gap: 1ex;
+  row-gap: 1ex;
+  list-style-type: none;
+  width: 90%;
+  height: 100%;
+}
+
+.Albumlist ul li {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.Albumlist ul li a{
+  background-color: rgb(255, 225, 189);
+  color: rgb(24, 11, 0);
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.2s;
+  font-size: 2.5ex;
+  font-weight: 400;
+}
+
+.albumyear {
+  font-style: italic;
+  font-size: 1.5ex;
+}
+
+.Albumlist ul li a:hover {
+  background-color: rgb(212, 189, 159);
+}
+
+.Albumdetails {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Albumdetails .title {
+  width: 65%;
+  height: 20%;
+  font-size: 4ex;
+  font-weight: 600;
+}
+
+.Albumdetails button {
+  width: 15%;
+  height: 12%;
+  justify-self: flex-end;
+  margin: 1ex;
+  background-color: rgb(24, 11, 0);
+  color: white;
+  transition: 0.2s;
+  border: 1px solid rgb(24, 11, 0);
+}
+
+.Albumdetails .edit:hover {
+  background-color: rgb(70, 38, 11);
+  cursor: pointer;
+}
+
+.Albumdetails .delete:hover {
+  background-color: rgb(177, 0, 0);
+  cursor: pointer;
+}
+
+.Albumdetails .year {
+  justify-self: flex-start;
+  width: 100%;
+  height: 20%;
+  font-style: italic;
+  font-size: 2.5ex;
+  font-weight: 300;
+}
+
+.Albumdetails ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.Albumdetails ul li {
+  border-top: 1px solid black;
+  padding: 1ex;
+  width: 50%;
+  font-size: 1.8ex;
+  font-weight: 400;
+  font-style: oblique;
+}
+
+.Albumform {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.Albumform .title {
+  width: 65%;
+  font-size: 4ex;
+  font-weight: 600;
+}
+
+.Albumform form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Albumform form button {
+  width: 25%;
+  padding: 4px;
+  margin-top: 1ex;
+  justify-self: flex-end;
+  margin-left: 1em;
+  background-color: rgb(24, 11, 0);
+  color: white;
+  transition: 0.2s;
+  border: 1px solid rgb(24, 11, 0);
+}
+
+.Albumform form .addsong {
+  margin-left: 0;
+  margin-top: 2ex;
+}
+
+
+.Albumform form .submit {
+  margin-left: 1em;
+  margin-top: 2ex;
+}
+
+.Albumform form button:hover {
+  background-color: rgb(70, 38, 11);
+  cursor: pointer;
+}
+
+.Albumform form .delete:hover {
+  background-color: rgb(177, 0, 0);
+  cursor: pointer;
+}
+
+.Albumform .title {
+  width: 100%;
+}
+
+.Albumform label {
+  width: 100%;
+  margin-top: 1ex;
+  margin-bottom: 0.5ex;
+}
+
+.Albumform input {
+  width: 70%;
+}

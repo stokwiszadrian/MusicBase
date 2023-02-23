@@ -1,0 +1,8 @@
+{
+    "realm": "Project-realm",
+    "auth-server-url": "http://localhost:8080/",
+    "ssl-required": "external",
+    "resource": "spa-client",
+    "public-client": true,
+    "confidential-port": 0
+}

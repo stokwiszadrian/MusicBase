@@ -1,0 +1,11 @@
+{
+    "realm": "devops-realm",
+    "bearer-only": true,
+    "auth-server-url": "http://localhost/",
+    "ssl-required": "external",
+    "resource": "resource-server",
+    "verify-token-audience": true,
+    "credentials": {},
+    "use-resource-role-mappings": true,
+    "confidential-port": 0
+  }
